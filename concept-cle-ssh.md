@@ -1,6 +1,6 @@
 ---
 type: concept
-title: Comprendre la clé SSH — système ad_images
+title: Comprendre la clé SSH
 ---
 
 # Comprendre la clé SSH
@@ -40,13 +40,13 @@ Dernière utilisation : il y a moins d'une semaine
 Accès      : Read/write
 ```
 
-C'est cette clé qui a permis le push du dépôt `testformation` lié à `ad_images`.
+C'est cette clé qui a permis le push du dépôt `testformation`.
 
 ## Pourquoi ça a marché directement ?
 
 Parce que la clé existait déjà avant la session de travail. L'ordi et GitHub se connaissaient déjà. Aucune configuration supplémentaire n'était nécessaire.
 
-## Ce qu'il faut retenir pour ad_images
+## Ce qu'il faut retenir
 
 Tout environnement (CI/CD, autre machine, nouveau développeur) qui doit pusher sur ce dépôt doit avoir :
 

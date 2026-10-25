@@ -1,13 +1,13 @@
 ---
 type: decision
-title: Push GitHub via SSH pour le système ad_images
+title: Push GitHub via SSH
 ---
 
-# Push GitHub via SSH pour le système ad_images
+# Push GitHub via SSH
 
 ## Contexte
 
-Lors de l'initialisation du dépôt Git pour le projet `testformation` (système dépendant de `ad_images`), le push initial vers GitHub a échoué à cause de l'absence de credentials HTTPS configurés dans l'environnement.
+Lors de l'initialisation du dépôt Git pour le projet `testformation`, le push initial vers GitHub a échoué à cause de l'absence de credentials HTTPS configurés dans l'environnement.
 
 ## Problème rencontré
 
@@ -55,10 +55,6 @@ git branch -M main
 git remote add origin git@github.com:smsaidou/testformation.git  # SSH dès le départ
 git push -u origin main
 ```
-
-## Impact sur ad_images
-
-Tout système dépendant de `ad_images` qui clone ou interagit avec ce dépôt doit disposer d'une clé SSH autorisée sur le compte GitHub `smsaidou`. En environnement CI/CD, utiliser un deploy key ou un token PAT avec les scopes `repo`.
 
 ## À retenir
 
